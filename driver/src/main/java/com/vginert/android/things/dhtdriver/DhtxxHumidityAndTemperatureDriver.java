@@ -37,8 +37,8 @@ public class DhtxxHumidityAndTemperatureDriver implements AutoCloseable  {
      * @see #registerHumiditySensor()
      * @see #registerTemperatureSensor()
      */
-    public DhtxxHumidityAndTemperatureDriver(String gpioPinName) throws IOException {
-        mDevice = new Dhtxx(gpioPinName);
+    public DhtxxHumidityAndTemperatureDriver(String gpioPinName, int type) throws IOException {
+        mDevice = new Dhtxx(gpioPinName, type);
     }
 
     /**
